@@ -2,7 +2,7 @@ import SocialLink from "./components/SocialLink.js";
 import { defineClientConfig } from "vuepress/client";
 
 export default defineClientConfig({
-  enhance: ({ app }) => {
+ base: '/LearnData/', {
     app.component("SocialLink", SocialLink);
   },
 });
